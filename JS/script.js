@@ -9,8 +9,24 @@ let personalMovieDB = {
     privat: false
 };
 
+                                        // Цикл с помощью while 1 способ
+// let i = 0;
+// while (i < 2) {
+//     let a = prompt("Последний фильм?", ""),
+//         b = prompt("На сколько оцениваешь?", "");
+//         i++;
+
+//         if (a != null && b != null && a != "" && b != "" && a.length < 50 ) {
+//                     personalMovieDB.movies[a] = b;
+//                     console.log("done");
+//                 } else {
+//                    console.log("error"); 
+//                    i--;
+//                 } 
+// }
+                                // Цикл с помощью do второй сособ
 let i = 0;
-while (i < 2) {
+do {
     let a = prompt("Последний фильм?", ""),
         b = prompt("На сколько оцениваешь?", "");
         i++;
@@ -22,8 +38,9 @@ while (i < 2) {
                    console.log("error"); 
                    i--;
                 }
-    
 }
+while (i < 2);
+                            // Цикл с помощью for 3 способ
 // for (let i = 0; i < 2; i++) {
 //     let a = prompt("Последний фильм?", ""),
 //         b = prompt("На сколько оцениваешь?", "");
